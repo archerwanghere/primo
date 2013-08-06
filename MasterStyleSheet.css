@@ -11,6 +11,18 @@ body
     font-family: "Times New Roman", Times, serif;   
         
 }
+
+
+  ul { list-style-type: none; }
+.bullet1 { list-style-image: url("Images/aball.gif")}
+.bullet2 { list-style-image: url("Images/aball.gif")}
+ .bullet3 { list-style-image: url("Images/aball.gif")}
+  .bullet4 { list-style-image: url("Images/aball.gif")}
+   .bullet5 { list-style-image: url("Images/aball.gif")}
+   .bullet6 { list-style-image: url("Images/aball.gif")}
+
+
+
 /* Main menu settings */
 #centeredmenu {
    clear:both;

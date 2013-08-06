@@ -13,7 +13,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             if (Session["New"] != null)
             {
-                Label1.Text = "Welcome " + Session["New"];
+                Label1.Text = "Welcome,  " + Session["New"];
             }
             else
             {

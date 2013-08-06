@@ -34,37 +34,45 @@
         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
 
         <HeaderTemplate>
-        <table style="width: 100%;" border=1>
+        <table border="1" width="100%">
+            <tr style="background-color:#222aa2;color:White" >
+            <th>Image</th>
+            <th>Description</th>
+            <th>Cost</th>
+            <th>Quantity</th>
+            <th>Action</th>
+            </tr>
         </HeaderTemplate>
 
         <ItemTemplate>
             <tr>
-                <td class="style35" rowspan="2">
+                <td class="style35">
                     
-                <img alt="" src="Images/<%# Eval("ImageFile") %>" style="height: 38px; width: 34px" border="0"/></img>
+                <img alt="" src="Images/<%# Eval("ImageFile") %>" style="height: 90px; width: 74px" border="0"/></img>
 
                 </td>
-                <td colspan="2">
-                    <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("ItemName") %>' />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
+              <%--  <td colspan="2">
+                    <asp:Label ID="NameLabel" runat="server"
+                     Text='<%# Eval("ItemName") %>' />
+                </td>--%>
+           
+                <td>
                     <asp:Label ID="DescriptionLabel" runat="server" 
                     Text='<%# Eval("Description") %>' />
                 </td>
-            </tr>
-            <tr>
-                <td class="style35" rowspan="2">
-                    $ <%# Eval("Cost")%>
-                </td>
+            
                 <td>
-                    &nbsp;
+                    <asp:Label ID="CostLabel1" runat="server" 
+                    Text='<%# Eval("Cost") %>' />
                 </td>
-                <td>
-                    &nbsp;
-                </td>
+                        <td>
+                            <asp:TextBox ID="Quantity" runat="server" Text='<%# Eval("Quantity")%>'></asp:TextBox>
+                        </td>
+                        <td>
+                            <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%#String.Format("{0}",Eval("ItemID"))%>'>AddItem</asp:LinkButton>
+                            </td>
             </tr>
+           
         </ItemTemplate>
         
         <FooterTemplate>
@@ -75,11 +83,7 @@
 
         </asp:Repeater>
 
-
-
-
     </p>
-    <p>
-    </p>
+    
 </asp:Content>
 

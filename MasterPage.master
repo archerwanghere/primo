@@ -84,12 +84,13 @@
                             <asp:HyperLink ID="HyperLink6" runat="server" 
                                 NavigateUrl="~/Registration.aspx">Create an account</asp:HyperLink>
 &nbsp;&nbsp;
-                            <asp:HyperLink ID="HyperLink7" runat="server">CartSummary</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Cart.aspx">CartSummary</asp:HyperLink>
 &nbsp;&nbsp;&nbsp; </td>
                         <td bgcolor="#CCFF66" rowspan="2" style="text-align: right">
                           
                         <br />
                                     User Information<br /><asp:Label ID="Label1" runat="server"></asp:Label>
+
                             <br />
                             &nbsp;</td>
                     </tr>
@@ -111,9 +112,8 @@
             <td class="style25" bgcolor="#CCFF66">&nbsp;</td>
             <td class="style26" >
                
-               <div id="centeredmenu">
-   <ul>
-      <li><a href="#">Computers</a>
+               <div id="centeredmenu">&nbsp;<ul>
+      <li><a href="list.aspx?SupplierID=7&CategoryID=1">Computers</a>
          <ul>
             <li><a href="list.aspx?SupplierID=7&CategoryID=1">Acer</a></li>
             <li><a href="list.aspx?SupplierID=4&CategoryID=1">Sony</a></li>
@@ -121,7 +121,7 @@
             <li><a href="list.aspx?SupplierID=5&CategoryID=1">Toshiba</a></li>
          </ul>
       </li>
-       <li><a href="#">Television</a>
+       <li><a href="list.aspx?SupplierID=7&CategoryID=6">Television</a>
          <ul>
             <li><a href="list.aspx?SupplierID=7&CategoryID=6">Philips</a></li>
             <li><a href="list.aspx?SupplierID=3&CategoryID=6">Sanio</a></li>
@@ -129,14 +129,14 @@
             <li><a href="list.aspx?SupplierID=4&CategoryID=6">Sony</a></li>
          </ul>
       </li>
-      <li class="active"><a href="#" class="active">Cameras</a>
+      <li class="active"><a href="list.aspx?SupplierID=1&CategoryID=3"class="active">Cameras</a>
          <ul>
             <li><a href="list.aspx?SupplierID=1&CategoryID=3">Canon</a></li>
             <li><a href="list.aspx?SupplierID=4&CategoryID=3">Sony</a></li>
             
          </ul>
       </li>
-      <li><a href="#">Celphones</a>
+      <li><a href="list.aspx?SupplierID=10&CategoryID=4">Celphones</a>
          <ul>
             <li><a href="list.aspx?SupplierID=10&CategoryID=4">BlackBerry</a></li>
             <li><a href="list.aspx?SupplierID=11&CategoryID=4">SamsungII</a></li>
@@ -144,7 +144,7 @@
             
          </ul>
       </li>
-      <li><a href="#">Tablets</a>
+      <li><a href="list.aspx?SupplierID=10&CategoryID=5">Tablets</a>
          <ul class="last">
             <li><a href="list.aspx?SupplierID=10&CategoryID=5">BlackBerry</a></li>
             <li><a href="list.aspx?SupplierID=3&CategoryID=5">Sharp</a></li>
