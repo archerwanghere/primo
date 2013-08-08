@@ -16,7 +16,8 @@
 
 
 
-        <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+        <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" 
+            onitemcommand="Repeater1_ItemCommand1">
 
         <HeaderTemplate>
         <table border="1" width="100%">
